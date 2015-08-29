@@ -85,6 +85,7 @@ header {
     border-radius: 50%;
 }
 .mobilenav {
+	position: absolute;
     font-family: inherit;
     top: 0;
     left: 0;
@@ -94,6 +95,13 @@ header {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.9);
+}
+.mobilenav > ul {
+	position: absolute;
+	height: 420px;
+	width: 100%;
+	top: 50%;
+	margin-top: -210px;
 }
 
 .mobilenav > ul > li {
@@ -113,9 +121,6 @@ header {
 }
 .mobilenav > ul > li > a:hover {
 	background-color:#323232;
-}
-.mobilenav > ul > li:first-child {
-    margin-top: 130px;
 }
 
 .social-icons {
@@ -1280,19 +1285,26 @@ form input[data-placeholder] {
 		width:33%;
 	}
 }
-@media screen and (max-width: 485px) {
+
+@media screen and (max-width: 480px) {
+	.mobilenav > ul {
+		height: 236px;
+		top: 50%;
+		margin-top: -100px;
+	}
+	.mobilenav > ul > li a {
+		font-size:30px;
+		letter-spacing: 3px;
+	}
+	.social-icons {
+		margin-top: 17px;
+	}
 	ul.recent-work li {
 		margin-bottom:
-	}
+	}	
 }	
 
 @media screen and (max-width: 414px) {
-	.mobilenav li a {
-		font-size:30px;
-	}
-	.mobilenav li:first-child {
-    	margin-top: 60px;
-	}
 	.top-animate {
 		top:9px !important;
 	}
