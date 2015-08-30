@@ -102,7 +102,7 @@
 	<a class="close" href="#"><i class="fa fa-times fa-2"></i></a>
 	<p class="title">Sketchbook Skool, Homepage Preview</p>
 	<div class="content">
-		<img src="<?php bloginfo('stylesheet_directory') ?>/img<?php bloginfo('stylesheet_directory') ?>/img/Hero_SBS_778x487.jpg" alt="" />
+		<img src="<?php bloginfo('stylesheet_directory') ?>/img/Hero_SBS_778x487.jpg" alt="" />
 	</div>
 	<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 		Nullam at volutpat ipsum. Nullam nec posuere ante. Nulla molestie ac odio sed malesuada.</p>
