@@ -22,14 +22,14 @@
 	tellus, egestas facilisis felis. Cras a sem nulla. Duis vulputate suscipit ornare.
 	Vivamus aliquet consequat est, id varius massa consectetur rutrum.</p>
 	<ul class="work-detail-share-icons">
-		<li><a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
-		<li><a href="#"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-		<li><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+		<li><a href="javascript:void(0);"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
+		<li><a href="javascript:void(0);"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+		<li><a href="javascript:void(0);"><i class="fa fa-facebook-square fa-3x"></i></a></li>
 	</ul>
 	<ul class="work-detail-tags">
-		<li><p><a href="#">MOBILE</a><i class="fa fa-tag"></i></p></li>
-		<li><p><a href="#">E-COMMERCE</a><i class="fa fa-tag"></i></p></li>
-		<li><p><a href="#">SITE ANALYTICS</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">MOBILE</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">E-COMMERCE</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">SITE ANALYTICS</a><i class="fa fa-tag"></i></p></li>
 	</ul>
 	<ul class="work-detail-screenshots">
 		<li class="screenshot"><a href="#Screenshot1"><img src="<?php bloginfo('stylesheet_directory') ?>/img/ss1.jpg" alt="ScreenShot 1" /></a></li>
@@ -40,11 +40,10 @@
 	</ul>
 </div>
 
-
 <!-- Lightbox Content -->
 <div class="lightbox" id="Screenshot1">
   <div class="box">
-	<a class="close" href="#"><i class="fa fa-times fa-2"></i></a>
+	<a class="close" href="javascript:void(0);"><i class="fa fa-times fa-2"></i></a>
 	<p class="title">Sketchbook Skool, Homepage Preview</p>
 	<div class="content">
 		<img src="<?php bloginfo('stylesheet_directory') ?>/img/Hero_SBS_778x487.jpg" alt="" />
@@ -57,7 +56,7 @@
  
 <div class="lightbox" id="Screenshot2">
   <div class="box">
-	<a class="close" href="#"><i class="fa fa-times fa-2"></i></a>
+	<a class="close" href="javascript:void(0);"><i class="fa fa-times fa-2"></i></a>
 	<p class="title">Sketchbook Skool, Homepage Preview</p>
 	<div class="content">
 		<img src="<?php bloginfo('stylesheet_directory') ?>/img/Hero_SBS_778x487.jpg" alt="" />
@@ -71,7 +70,7 @@
  
 <div class="lightbox" id="Screenshot3">
   <div class="box">
-	<a class="close" href="#"><i class="fa fa-times fa-2"></i></a>
+	<a class="close" href="javascript:void(0);"><i class="fa fa-times fa-2"></i></a>
 	<p class="title">Sketchbook Skool, Homepage Preview</p>
 	<div class="content">
 		<img src="<?php bloginfo('stylesheet_directory') ?>/img/Hero_SBS_778x487.jpg" alt="" />
@@ -85,7 +84,7 @@
 
 <div class="lightbox" id="Screenshot4">
   <div class="box">
-	<a class="close" href="#"><i class="fa fa-times fa-2"></i></a>
+	<a class="close" href="javascript:void(0);"><i class="fa fa-times fa-2"></i></a>
 	<p class="title">Sketchbook Skool, Homepage Preview</p>
 	<div class="content">
 		<img src="<?php bloginfo('stylesheet_directory') ?>/img/Hero_SBS_778x487.jpg" alt="" />
@@ -99,7 +98,7 @@
 
 <div class="lightbox" id="Screenshot5">
   <div class="box">
-	<a class="close" href="#"><i class="fa fa-times fa-2"></i></a>
+	<a class="close" href="javascript:void(0);"><i class="fa fa-times fa-2"></i></a>
 	<p class="title">Sketchbook Skool, Homepage Preview</p>
 	<div class="content">
 		<img src="<?php bloginfo('stylesheet_directory') ?>/img/Hero_SBS_778x487.jpg" alt="" />

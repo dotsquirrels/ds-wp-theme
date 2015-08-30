@@ -19,9 +19,9 @@
 	</div>
 	
 	<ul class="work-detail-tags">
-		<li><p><a href="#">MOBILE</a><i class="fa fa-tag"></i></p></li>
-		<li><p><a href="#">E-COMMERCE</a><i class="fa fa-tag"></i></p></li>
-		<li><p><a href="#">SITE ANALYTICS</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">MOBILE</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">E-COMMERCE</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">SITE ANALYTICS</a><i class="fa fa-tag"></i></p></li>
 	</ul>
 	
 	<hr>
@@ -38,9 +38,9 @@
 	</div>
 	
 	<ul class="work-detail-tags">
-		<li><p><a href="#">MOBILE</a><i class="fa fa-tag"></i></p></li>
-		<li><p><a href="#">E-COMMERCE</a><i class="fa fa-tag"></i></p></li>
-		<li><p><a href="#">SITE ANALYTICS</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">MOBILE</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">E-COMMERCE</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">SITE ANALYTICS</a><i class="fa fa-tag"></i></p></li>
 	</ul>
 	
 	<hr>
@@ -57,21 +57,21 @@
 	</div>
 	
 	<ul class="work-detail-tags">
-		<li><p><a href="#">MOBILE</a><i class="fa fa-tag"></i></p></li>
-		<li><p><a href="#">E-COMMERCE</a><i class="fa fa-tag"></i></p></li>
-		<li><p><a href="#">SITE ANALYTICS</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">MOBILE</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">E-COMMERCE</a><i class="fa fa-tag"></i></p></li>
+		<li><p><a href="javascript:void(0);">SITE ANALYTICS</a><i class="fa fa-tag"></i></p></li>
 	</ul>
 	
 	<ul class="blog-content-navigation">
-		<li class="older-posts"><a href="#"><i class="fa fa-caret-left"></i> &nbsp;&nbsp;OLDER</a></li>
-		<li><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">4</a></li>
-		<li><a href="#">&hellip;</a></li>
-		<li><a href="#">12</a></li>
-		<li><a href="#">13</a></li>
-		<li class="newer-posts"><a href="#">NEWER &nbsp;&nbsp;<i class="fa fa-caret-right"></i></a></li>
+		<li class="older-posts"><a href="javascript:void(0);"><i class="fa fa-caret-left"></i> &nbsp;&nbsp;OLDER</a></li>
+		<li><a href="javascript:void(0);">1</a></li>
+		<li><a href="javascript:void(0);">2</a></li>
+		<li><a href="javascript:void(0);">3</a></li>
+		<li><a href="javascript:void(0);">4</a></li>
+		<li><a href="javascript:void(0);">&hellip;</a></li>
+		<li><a href="javascript:void(0);">12</a></li>
+		<li><a href="javascript:void(0);">13</a></li>
+		<li class="newer-posts"><a href="javascript:void(0);">NEWER &nbsp;&nbsp;<i class="fa fa-caret-right"></i></a></li>
 	</ul>
 	
 </div>
@@ -81,7 +81,7 @@
 <!-- Lightbox Content -->
 <div class="lightbox" id="Screenshot1">
   <div class="box">
-	<a class="close" href="#"><i class="fa fa-times fa-2"></i></a>
+	<a class="close" href="javascript:void(0);"><i class="fa fa-times fa-2"></i></a>
 	<p class="title">Floated Right, In-Body Copy ScreenShot</p>
 	<div class="content">
 		<img src="<?php bloginfo('stylesheet_directory') ?>/img/InBodyImage_1680x1050.jpg" alt="" />
@@ -93,7 +93,7 @@
  
 <div class="lightbox" id="Screenshot2">
   <div class="box">
-	<a class="close" href="#"><i class="fa fa-times fa-2"></i></a>
+	<a class="close" href="javascript:void(0);"><i class="fa fa-times fa-2"></i></a>
 	<p class="title">Floated Left, In-Body Copy ScreenShot</p>
 	<div class="content">
 		<img src="<?php bloginfo('stylesheet_directory') ?>/img/InBodyImage_1680x1050.jpg" alt="" />
