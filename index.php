@@ -4,12 +4,12 @@
 	<h2>Recent Work</h2>
 	<div class="rough-edge"></div>
 	<ul class="recent-work">
-		<li class="align-left"><a href="javascript:void(0);"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SketchbookSkool_243x243.png" alt="" /></a><p><a href="javascript:void(0);">Sketchbook Skool</a></p></li>
-		<li class="align-center"><a href="javascript:void(0);"><img src="<?php bloginfo('stylesheet_directory') ?>/img/ShippingEasy_243x243.png" alt="" /></a><p><a href="javascript:void(0);">ShippingEasy</a></p></li>
-		<li class="align-right"><a href="javascript:void(0);"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SonyCES_243x243.png" alt="" /></a><p><a href="javascript:void(0);">Sony Electronics</a></p></li>
-		<li class="align-left"><a href="javascript:void(0);"><img src="<?php bloginfo('stylesheet_directory') ?>/img/RPA_243x243.png" alt="" /></a><p><a href="javascript:void(0);">RPA</a></p></li>
-		<li class="align-center"><a href="javascript:void(0);"><img src="<?php bloginfo('stylesheet_directory') ?>/img/WPA_243x243.png" alt="" /></a><p><a href="javascript:void(0);">World Poker Tour</a></p></li>
-		<li class="align-right"><a href="javascript:void(0);"><img src="<?php bloginfo('stylesheet_directory') ?>/img/Rethinqk_243x243.png" alt="" /></a><p><a href="javascript:void(0);">Rethinqk</a></p></li>
+		<li class="align-left"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SketchbookSkool_243x243.png" alt="" /></a><p><a href="javascript:void(0);">Sketchbook Skool</a></p></li>
+		<li class="align-center"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/ShippingEasy_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">ShippingEasy</a></p></li>
+		<li class="align-right"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SonyCES_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">Sony Electronics</a></p></li>
+		<li class="align-left"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/RPA_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">RPA</a></p></li>
+		<li class="align-center"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/WPA_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">World Poker Tour</a></p></li>
+		<li class="align-right"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/Rethinqk_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">Rethinqk</a></p></li>
 	</ul>
 	
 	<h2>What We Do</h2>
@@ -24,7 +24,7 @@
 		<li><i class="fa fa-area-chart fa-5x"></i><p>Placeholder</p></li>
 		<li><i class="fa fa-cubes fa-5x"></i><p>Placeholder</p></li>
 	</ul>
-	<button>&amp; Some Other Things</button>
+	<a href="<?php echo site_url('/capabilities'); ?>"><button>&amp; Some Other Things</button></a>
 	
 	<h2>Why We Do It</h2>
 	<div class="rough-edge"></div>
@@ -36,7 +36,7 @@
 	tempus metus et volutpat. Aliquam erat volutpat.
 	<br><br>
 	Maecenas id dui id risus bibendum accumsan.</p>
-	<button>Tips &amp; Rants</button>
+	<a href="<?php echo site_url('/blog'); ?>"><button>Tips &amp; Rants</button></a>
 	
 	<h2>Who We Are</h2>
 	<div class="rough-edge"></div>
@@ -49,6 +49,6 @@
 	eu pretium lacus, nec placerat metus. Quisque placerat, augue ut
 	condimentum rutrum, augue massa tempor dui, vulputate convallis
 	turpis tellus eu justo.</p>
-	<a href="javascript:void(0);"><button>Meet The Team</button></a>
+	<a href="<?php echo site_url('/about'); ?>"><button>Meet The Team</button></a>
 
 <?php get_footer(); ?>

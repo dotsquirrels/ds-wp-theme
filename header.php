@@ -35,14 +35,14 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
 	<div class="mobilenav">
 		<ul>
-			<li><a href="javascript:void(0);">Home</a></li>
-			<li><a href="javascript:void(0);">Capabilities</a></li>
-			<li><a href="javascript:void(0);">About Us</a></li>
-			<li><a href="javascript:void(0);">Tips & Rants</a></li>
+			<li><a href="<?php echo site_url('/'); ?>">Recent Work</a></li>
+			<li><a href="<?php echo site_url('/capabilities'); ?>">Capabilities</a></li>
+			<li><a href="<?php echo site_url('/about'); ?>">About Us</a></li>
+			<li><a href="<?php echo site_url('/blog'); ?>">Tips & Rants</a></li>
 			<li class="social-icons">
 				<ul>
 					<li class="linkdin"><a href="http://www.linkedin.com/company/dot-squirrels-llc" target="_blank"><img src="<?php bloginfo('stylesheet_directory') ?>/img/trans.gif" height="24" width="24" border="0"></a></li>
@@ -65,7 +65,7 @@
 	<a name="top"></a>
 	
 	<header>
-		<h1><a href="<?php echo site_url('/'); ?>"><img src="<?php bloginfo('stylesheet_directory') ?>/img/DS_Logo_700x318.png" alt="Dot Squirrels Logo" /></a></h1>
+		<h1><a href="<?php echo site_url('/'); ?>"><img src="<?php bloginfo('stylesheet_directory') ?>/img/hand-printed-logo.png" alt="Dot Squirrels Logo" /></a></h1>
 	</header>
 
 	<div class="container" id="gradient">
