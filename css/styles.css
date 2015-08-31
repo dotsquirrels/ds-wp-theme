@@ -49,6 +49,10 @@ h4 {
 	font-weight:400;
 }
 
+.center {
+	text-align: center;
+}
+
 .container {
 	position: relative;
 	width: 92%;
@@ -82,6 +86,11 @@ h4 {
 	padding:30px 0;
 	overflow:hidden;
 }
+.container hr {
+	border-top:1px solid #e2e0e0;
+	width:15%;
+	margin:20px auto;
+}
 
 .rough-edge {
 	background:url('../img/rough-line.png');
@@ -90,7 +99,7 @@ h4 {
 	height:8px;
 }
 
-button {
+a.button {
 	color:#545353;
 	background:rgba(255,255,255,0);
 	font-family: "brandon-grotesque", Arial, sans-serif;
@@ -100,9 +109,9 @@ button {
 	text-transform: uppercase;
 	border:1px solid #545353;
 	border-radius:5px;
-	margin:0 auto 66px auto;
-	padding:20px 40px;
-	display:block;
+	margin: 50px auto 55px auto;
+	padding: 20px 40px;
+	display: inline-block;
 	cursor:pointer;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
@@ -110,7 +119,7 @@ button {
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
-button:hover {
+a.button:hover {
 	background:rgba(255,255,255,1);
 	color:#000000;
 	border:1px solid #000000;
@@ -162,11 +171,6 @@ input[type="submit"]:hover {
 }
 textarea {
 	min-height:128px;
-}
-.container hr {
-	border-top:1px solid #e2e0e0;
-	width:15%;
-	margin:20px auto;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -383,10 +387,12 @@ ul.what-we-do li {
 ul.what-we-do li img {
 	width:100px;
 }
-ul.what-we-do li p {
-	font-size:16px;
-	font-weight:900;
-	padding-top:20px;
+ul.what-we-do li span {
+	display: block;
+	color: #000 !important;
+	font-size: 16px !important;
+	font-weight: 900;
+	padding-top: 20px;
 	text-transform: uppercase;
 }
 
@@ -406,14 +412,26 @@ div.contact-details a:hover {
 	text-decoration:underline;
 }
 
-p.whoweare-copy {
+body.home .content {
+	padding-top: 35px;
+}
+body.home .content p {
 	font-size:24px;
 	line-height:26px;
 	color:#545353;
 	width:90%;
 	max-width:616px;
-	margin:66px auto;
+	margin: 15px auto;
+	margin-bottom: 10px;
 }
+
+body.home .content.what_we_do {
+	padding-top: 0px;
+}
+body.home .content.what_we_do a.button {
+	margin: 15px auto 65px auto;
+}
+
 div.back-to-top {
 	width:200px;
 	margin:0 auto;
@@ -1241,7 +1259,7 @@ div.content img {
 	.fa-5x {
 		font-size:4em !important; 
 	}
-	button {
+	a.button {
 		width:100%;
 		max-width:74%;
 		font-size:14px;
@@ -1396,10 +1414,9 @@ div.content img {
 		width:50%;
 		padding:10px;
 	}
-	p.whoweare-copy {
+	body.home .content p {
 		font-size:21px;
 		width:80%;
-		margin:35px auto;
 	}
 	input[type="email"], input[type="text"], textarea, select {
 		font-size:18px;

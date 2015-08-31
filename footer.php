@@ -1,4 +1,4 @@
-		<?php if (is_home()) { ?>	
+		<?php if (is_front_page()) { ?>	
 
 			<h2>Contact Us</h2>
 			<div class="rough-edge"></div>
