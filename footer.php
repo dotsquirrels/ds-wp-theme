@@ -8,10 +8,10 @@
 				<textarea placeholder="Message..." id=""></textarea>
 				<input class="" type="submit" value="Send">
 			</form>
-			<div class="contact-details">310 566 2800</div>
+			<div class="contact-details"><a href="tel:+13105662800">310 566 2800</a></div>
 			<div class="contact-details"><a href="mailto:help@dotsquirrels.com">help@dotsquirrels.com</a></div>
 			<hr>
-			<div class="contact-details">8731 Venice Blvd., Los Angeles, CA 90034</div>
+			<div class="contact-details"><a href="https://www.google.com/maps/place/8731+Venice+Blvd,+Los+Angeles,+CA+90034/@34.032497,-118.383445,17z/" target="_blank">8731 Venice Blvd., Los Angeles, CA 90034</a></div>
 				
 			<div class="back-to-top">
 				<a href="#top">Back to top</a>

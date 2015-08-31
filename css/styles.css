@@ -404,7 +404,7 @@ div.contact-details {
 	margin:0 auto;
 	text-align:center;
 }
-div.contact-details a:link {
+div.contact-details a:link, div.contact-details a:visited {
 	color:#000000;
 }
 div.contact-details a:hover {
