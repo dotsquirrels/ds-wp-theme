@@ -923,13 +923,19 @@ ul.blog-content-navigation li {
 	display:inline-table;
 	padding:10px;
 }
+ul.blog-content-navigation li.older-posts a i {
+	margin-right: 20px;
+}
+ul.blog-content-navigation li.newer-posts a i {
+	margin-left: 20px;
+}
 ul.blog-content-navigation li a:link {
-	color:#000000;
+	color:#4e4c4a;
 	font-size:18px;
 	text-transform:uppercase;
 }
 ul.blog-content-navigation li a:hover {
-	text-decoration:underline;
+	color:#000;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////*/
