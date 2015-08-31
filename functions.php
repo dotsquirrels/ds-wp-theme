@@ -9,7 +9,7 @@ function icon_li($atts, $content = null) {
         'icon' => 'code',
         'size' => '2'
     ), $atts);
-	return '<li><i class="fa fa-'.$a['icon'].' fa-'.$a['size'].'x"></i><span>'.$content.'</span></li>';
+	return '<li><span class="li-icon"><i class="fa fa-'.$a['icon'].' fa-'.$a['size'].'x"></i></span><span class="li-text">'.$content.'</span></li>';
 }
 add_shortcode( 'li', 'icon_li' );
 

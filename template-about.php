@@ -11,15 +11,12 @@ Template Name: About
 
 <div class="about-container">
 
-	<ul class="atomic-header">
-		<li class="headline">
-			<h3><?php echo types_render_field('atomic_headline'); ?></h3>
-		</li>
-		<li class="body">
+	<div class="atomic-header">
+		<h3><?php echo types_render_field('atomic_headline'); ?></h3>
+		<div class="body">
 			<?php echo types_render_field('atomic_content'); ?>
-		</li>
-		<li class="background"><img src="<?php bloginfo('stylesheet_directory') ?>/img/atomic-bg.png" /></li>
-	</ul>
+		</div>
+	</div>
 
 	<?php the_content(); ?>
 
