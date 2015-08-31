@@ -10,12 +10,45 @@ Template Name: Homepage
 	<div class="rough-edge"></div>
 	<div class="recent_work content">
 		<ul class="recent-work">
-			<li class="align-left"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SketchbookSkool_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">Sketchbook Skool</a></p></li>
-			<li class="align-center"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/ShippingEasy_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">ShippingEasy</a></p></li>
-			<li class="align-right"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SonyCES_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">Sony Electronics</a></p></li>
-			<li class="align-left"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/RPA_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">RPA</a></p></li>
-			<li class="align-center"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/WPA_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">World Poker Tour</a></p></li>
-			<li class="align-right"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/Rethinqk_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">Rethinqk</a></p></li>
+			<?php
+			
+			$args = array(
+				'post_type' => 'post',
+				'posts_per_page' => 6,
+				'post_status' => 'publish',
+				'meta_query' => array(array('key' => 'wpcf-post_featured', 'value' => '1'))
+			);
+			$recent_work = new WP_Query($args);			
+
+			if ($recent_work->have_posts()) {
+				$post_counter == 0;
+				while ($recent_work->have_posts()) {
+					$post_counter++;
+					$recent_work->the_post();
+					$thumbnail_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square-rough-edge');
+					switch($post_counter) {
+						case 1:
+						case 4:
+							$thumb_class = 'left';
+							break;
+						case 3:
+						case 6:
+							$thumb_class = 'right';
+							break;
+						default:
+							$thumb_class = 'center';
+					}
+					?><li class="align-<?php echo $thumb_class; ?>">
+						<a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_image[0]; ?>" alt="<?php the_title(); ?>" width="243" height="243" /></a>
+						<p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+					</li><?php
+				}
+
+			}
+
+			wp_reset_postdata();			
+			
+			?>
 		</ul>
 	</div>
 	

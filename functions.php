@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support('post-thumbnails'); 
+
 /* SHORTCODES */
 
 function icon_li($atts, $content = null) {
