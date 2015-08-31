@@ -4,16 +4,48 @@
 
 function icon_li($atts, $content = null) {
     $a = shortcode_atts(array(
-        'icon' => 'code'
+        'icon' => 'code',
+        'size' => '2'
     ), $atts);
-	return '<li><i class="fa fa-'.$a['icon'].' fa-5x"></i><span>'.$content.'</span></li>';
+	return '<li><i class="fa fa-'.$a['icon'].' fa-'.$a['size'].'x"></i><span>'.$content.'</span></li>';
 }
 add_shortcode( 'li', 'icon_li' );
+
+function bio_card($atts, $content = null) {
+    $default_image = get_bloginfo('stylesheet_directory').'/img/default-bio-photo.png';
+    $a = shortcode_atts(array(
+        'name' => 'Name',
+        'title' => 'Title',
+        'photo' => $default_image
+    ), $atts);
+	$image_id = get_image_id_by_url($a['photo']);
+	if ($image_id) {
+		$image_src = wp_get_attachment_image_src($image_id, 'square-rough-edge')[0];
+	} else {
+		$image_src = $default_image;
+	}
+	return '
+	<ul class="about-us-profile">
+		<li class="headshot"><img src="'.$image_src.'" alt="'.$a['name'].'" /></li>
+		<li class="name">'.$a['name'].'</li>
+		<li class="title">'.$a['title'].'</li>
+		<li class="blurb">'.$content.'</li>
+	</ul>
+	';
+}
+add_shortcode( 'bio', 'bio_card' );
 
 /* CUSTOM IMAGE PROCESSING */
 
 add_image_size('square-rough-edge', 389, 389, true);
 add_filter('wp_generate_attachment_metadata','mask_rough_square');
+
+add_filter('image_size_names_choose', 'add_custom_sizes');
+function add_custom_sizes($sizes) {
+    return array_merge( $sizes, array(
+        'square-rough-edge' => __('Square, Rough Edge'),
+    ) );
+}
 
 function mask_rough_square($meta) {
 	$file = $meta['sizes']['square-rough-edge']['file'];
@@ -27,7 +59,8 @@ function do_masked_square_filter($file) {
 	$mask = imagecreatefrompng(get_stylesheet_directory().'/img/rough-edge-mask.png');
 	$original = trailingslashit($dir['path']).$file;
 	imagealphamask($image, $mask);
-	$file = basename($file).'-masked.png';
+	$filename_info = pathinfo($file);
+	$file = $filename_info['filename'].'-masked.png';
 	$dest = trailingslashit($dir['path']).$file;
 	imagepng($image, $dest);
 	unlink($original);
@@ -64,7 +97,7 @@ function imagecreatefromfile($filename) {
 			break;		
 		case 'png':
 			return imagecreatefrompng($filename);
-			break;		
+			break;
 		case 'gif':
 			return imagecreatefromgif($filename);
 			break;
@@ -72,6 +105,12 @@ function imagecreatefromfile($filename) {
 			throw new InvalidArgumentException('File "'.$filename.'" is not valid jpg, png or gif image.');
 			break;
 	}
+}
+
+function get_image_id_by_url($url) {
+	global $wpdb;
+	$url = preg_replace('/-\d+x\d+(?=\.(jpg|jpeg|png|gif)$)/i', '', $url);
+	return $wpdb->get_var("SELECT ID FROM {$wpdb->posts} WHERE BINARY guid='$url'");
 }
 
 ?>
