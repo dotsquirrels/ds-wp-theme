@@ -674,12 +674,6 @@ div.work-detail-container iframe {
 div.work-detail-container hr {
 	width:30%;
 }
-p.work-detail-body-copy {
-	margin-top:33px;
-	font-size:20px;
-	line-height:28px;
-	color:#8b8b8b; 
-}
 ul.work-detail-share-icons {
 	display:table; 
 	margin:42px auto; 
@@ -775,6 +769,7 @@ div.basic-content-container {
 div.basic-content-container hr {
 	width:100%;
 }
+
 div.basic-content {
 	width:100%;
 	max-width:778px;
@@ -858,6 +853,7 @@ div.blog-container {
 	height:auto;
 	margin:66px auto;
 }
+
 div.blog-container hr {
 	width:100%;
 }
@@ -901,10 +897,12 @@ div.blog-container hr {
 	text-align:center;
 	margin:15px auto;
 }
-.blog-container p.work-detail-body-copy {
-	text-align:center;
-	margin-top:0;
+.blog-container p.basic-content-excerpt {
+	color:#8b8b8b; 
+	font-size:20px;
 	line-height:24px;
+	text-align:center;
+	margin-top:0px;
 }
 .blog-container ul.work-detail-tags {
 	margin:15px auto 30px auto;
