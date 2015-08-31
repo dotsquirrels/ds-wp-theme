@@ -642,9 +642,9 @@ li.blurb {
 	width:100%;
 	max-width:778px;
 	height:auto;
-	margin:66px auto 100px;
+	margin:60px auto 100px;
 }
-div.work-detail-container ul li img{
+div.work-detail-container ul li img {
 	display:block;
 	width:100%; 
 }
@@ -653,6 +653,14 @@ p.work-detail-leadin-copy {
 	font-size:28px;
 	line-height:32px;
 	color:#585858;
+}
+div.work-detail-container p {
+	color: #222;
+	font-size: 20px;
+	margin: 15px auto;
+}
+div.work-detail-container iframe {
+	margin-top: 12px;
 }
 div.work-detail-container hr {
 	width:30%;

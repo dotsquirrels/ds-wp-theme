@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h2>SKETCHBOOK SKOOL</h2>
+<h2><?php the_title(); ?></h2>
 <div class="rough-edge"></div>
 
 <!-- Start Work Detail -->
