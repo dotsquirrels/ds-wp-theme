@@ -10,12 +10,12 @@ Template Name: Homepage
 	<div class="rough-edge"></div>
 	<div class="recent_work content">
 		<ul class="recent-work">
-			<li class="align-left"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SketchbookSkool_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">Sketchbook Skool</a></p></li>
-			<li class="align-center"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/ShippingEasy_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">ShippingEasy</a></p></li>
-			<li class="align-right"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SonyCES_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">Sony Electronics</a></p></li>
-			<li class="align-left"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/RPA_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">RPA</a></p></li>
-			<li class="align-center"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/WPA_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">World Poker Tour</a></p></li>
-			<li class="align-right"><a href="/ds2015/blog/sample-post/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/Rethinqk_243x243.png" alt="" /></a><p><a href="/ds2015/blog/sample-post/">Rethinqk</a></p></li>
+			<li class="align-left"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SketchbookSkool_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">Sketchbook Skool</a></p></li>
+			<li class="align-center"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/ShippingEasy_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">ShippingEasy</a></p></li>
+			<li class="align-right"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/SonyCES_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">Sony Electronics</a></p></li>
+			<li class="align-left"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/RPA_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">RPA</a></p></li>
+			<li class="align-center"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/WPA_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">World Poker Tour</a></p></li>
+			<li class="align-right"><a href="/ds2015/work/sample-example/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/Rethinqk_243x243.png" alt="" /></a><p><a href="/ds2015/work/sample-example/">Rethinqk</a></p></li>
 		</ul>
 	</div>
 	
