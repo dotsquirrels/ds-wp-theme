@@ -757,18 +757,8 @@ ul.work-detail-screenshots li a img:hover {
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*////		Basic Content Template													//////////////*/
+/*////		Category  / Blog														//////////////*/
 /*////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-div.basic-content-container {
-	width: 100%;
-    max-width: 778px;
-    height: auto;
-    margin: 66px auto 100px;
-}
-div.basic-content-container hr {
-	width:100%;
-}
 
 div.basic-content {
 	width:100%;
@@ -795,57 +785,6 @@ p.basic-content-date {
 	width:100%;
 	height:auto;
 }
-.basic-content img.play-video-button {
-	position:absolute;
-	z-index:100;
-	top: 30%;
-	left:37%;
-	width:25%;
-}
-p.work-detail-body-copy img.img-float-right {
-	float:right;
-	width:100%;
-	max-width:320px;
-	height:auto;
-	padding:20px;
-	margin:10px;
-}
-p.work-detail-body-copy img.img-float-left {
-	float:left;
-	width:100%;
-	max-width:320px;
-	height:auto;
-	padding:20px;
-	margin:10px;
-}
-ul.basic-content-navigation {
-	display:table;
-	width:100%;
-	max-width:778px;
-	height:auto;
-	margin:0 auto;
-}
-li.next-post {
-	float:right;
-}
-li.previous-post {
-	float:left;
-}
-li.next-post a:link, li.previous-post a:link {
-	color:#000000;
-	font-size:18px;
-	text-transform:uppercase;
-}
-li.next-post a:hover, li.previous-post a:hover {
-	text-decoration:underline;
-}
-li.next-post a:hover, li.previous-post a:visited {
-	color:#000000;
-}
-
-/*////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*////		Category  / Blog														//////////////*/
-/*////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 div.blog-container {
 	width:100%;
