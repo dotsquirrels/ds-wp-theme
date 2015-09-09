@@ -1122,9 +1122,49 @@ form input[data-placeholder] {
 /*////		Media Queries / Responsiveness											//////////////*/
 /*////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+@media screen and (max-width: 963px) {
+
+	ul.what-we-do li {
+		height: 115px;	
+	}
+
+	ul.what-we-do li span {
+		font-size: 14px !important;
+	}
+	.about-container ul.about-us-profile li.headshot {
+		width: 50%;
+	}
+	.about-container ul.about-us-profile li.name, li.title, li.blurb {
+		width: 44%;
+	}
+	.about-container ul.about-us-profile li.headshot img {
+		width: 100%;
+		height: auto;
+	}
+
+	ul.about-us-profile li.name {
+		font-size: 30px;
+	}
+	ul.about-us-profile li.title, li.blurb {
+		font-size: 22px;
+	}
+
+	div.work-detail-container {
+		margin-top: 35px;
+	}	
+	div.work-detail-container p {
+		margin: 15px 32px;
+	}	
+	div.work-detail-container p img.size-large {
+		width: 100%;
+		height: auto;
+	}
+	
+}
+
 @media screen and (max-width: 800px) {
 	h3 {
-		width:92%;
+		width: 92%;
 		margin:0 auto;
 		height:auto;
 	}
@@ -1168,12 +1208,46 @@ form input[data-placeholder] {
 	ul.about-us-profile {
 		padding:15px;
 	}
-	.work-detail-container h2 {
+	div.work-detail-container h2 {
 		padding-left:15px;
 	}
 	div.blog-container hr {
 		width:92%;
 	}
+
+	div.atomic-header {
+		margin-bottom: 0px;
+	}
+	.about-container,
+	.capabilities-container {
+		margin-top: -4px;
+	}
+	.about-container ul {
+		width: auto;
+		margin: 50px;
+		padding: 0px;
+	}
+	.about-container h2,
+	.about-container p {
+		margin: 50px;
+	}	
+	.about-container ul.about-us-profile li.headshot {
+
+	}
+	.about-container ul.about-us-profile li.headshot img {
+		width: 100%;
+		height: 100%;
+	}
+	.about-container h2,
+	.about-container ul.about-us-profile li.name,
+	.about-container ul.about-us-profile li.title {
+		padding-top: 0px;
+	}
+
+	.about-container ul.about-us-profile li.blurb {
+		margin-bottom: 25px;
+	}
+
 }
 
 @media screen and (max-width: 700px) {
@@ -1259,12 +1333,9 @@ form input[data-placeholder] {
 		padding:7px;
 	}
 
-	ul.atomic-header li.headline h3 {
+	div.atomic-header div.headline h3 {
 		font-size:22px;
 		padding:30px;
-	}
-	ul.atomic-header li.body p {
-		padding:50px 20px 0 20px;
 	}
 	.work-detail-container h4 {
 		font-size:28px;
@@ -1275,6 +1346,35 @@ form input[data-placeholder] {
 	ul.what-we-do li {
 		width:33%;
 	}
+
+	.about-container {
+		margin-top: -4px;
+	}
+	.about-container h2,
+	.about-container p {
+		margin: 20px;
+	}	
+	.about-container ul.about-us-profile {
+		margin: 20px auto 25px;
+	}
+	.about-container ul.about-us-profile li.headshot {
+		margin-top: -30px;
+	}
+	.about-container ul.about-us-profile li.headshot img {
+		width: 100%;
+		height: auto;
+	}
+	.about-container h2,
+	.about-container ul.about-us-profile li.name,
+	.about-container ul.about-us-profile li.title {
+		width: auto;
+		text-align: center;
+	}
+
+	.about-container ul.about-us-profile li.blurb {
+		margin-bottom: 25px;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1303,7 +1403,7 @@ form input[data-placeholder] {
 		top:9px !important;
 	}
 	.container {
-		width:100%;
+		width:96%;
 		margin-top:20px;
 	}
 	h3 {
@@ -1338,10 +1438,7 @@ form input[data-placeholder] {
 	ul.recent-work li img {
 		width:75%;
 	}
-	ul.work-detail-screenshots li {
-		width:50%;
-		padding:10px;
-	}
+
 	body.home .content p {
 		font-size:21px;
 		width:80%;
@@ -1352,6 +1449,49 @@ form input[data-placeholder] {
 	form.contact-form {
 		margin:35px auto 60px;
 	}
+
+	div.atomic-header {
+		margin-bottom: 0px;
+	}
+	ul.capabilities-list li {
+		font-size:20px;
+	}
+
+	.about-container h2,
+	.about-container p {
+		margin: 20px;
+	}	
+	.about-container ul.about-us-profile li.headshot {
+		margin-top: -30px;
+	}
+	.about-container ul.about-us-profile li.headshot img {
+		width: 275px;
+		height: 275px;
+	}
+
+	.about-container ul.about-us-profile li {
+		width: 100% !important;
+	}
+	
+	.about-container h2,
+	.about-container ul.about-us-profile li.name,
+	.about-container ul.about-us-profile li.title {
+		width: auto;
+		text-align: center;
+	}
+
+	.about-container ul.about-us-profile li.blurb {
+		margin-bottom: 25px;
+	}
+
+	.work-detail-container h4 {
+		font-size:24px;
+	}
+	ul.work-detail-screenshots li {
+		width:50%;
+		padding:10px;
+	}
+
 	.blog-container .basic-content-hero {
 		width:92%;
 		max-width:none;
@@ -1359,20 +1499,16 @@ form input[data-placeholder] {
 	.blog-container h3 {
 		font-size:22px;
 	}
-	ul.atomic-header li.background {
-		background-color: #dfd0bf;
-		height: 225px;
+
+	.copyright-links > p {
+		display: none;
 	}
-	ul.atomic-header li.body p {
-		line-height:20px;
-	}	
-	ul.capabilities-list li {
-		font-size:20px;
+	.copyright-links ul li {
+		display: block;
 	}
-	.work-detail-container h4 {
-		font-size:24px;
-	}
+	
 }
+
 @media screen and (max-width: 320px) {
 	ul.blog-content-navigation li {
 		padding:5px;
@@ -1382,12 +1518,6 @@ form input[data-placeholder] {
 	}
 	.container h2 {
 		font-size:22px;
-	}
-	ul.atomic-header li.background {
-		height:240px;
-	}
-	ul.atomic-header li.headline h3 {
-		font-size:18px;
 	}
 	.work-detail-container h4 {
 		padding-left:20px;
