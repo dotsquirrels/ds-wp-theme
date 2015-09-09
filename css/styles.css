@@ -512,20 +512,36 @@ div.back-to-top a:hover {
 
 .capabilities-container {
 	width:100%;
-	max-width:778px;
 	height:auto;
-	margin:66px auto 100px;
+	margin-top: 66px;
+	margin-bottom: 250px;
+}
+
+.capabilities-container div.atomic-header {
+	margin-bottom: 25px;
 }
 
 .capabilities-container h2 {
 	color: #222;
-	text-align:left;
 	background: none;
-	padding:0;
+	margin-top: 20px;
+	padding-top: 35px;
+}
+
+.capabilities-container div.rough-edge {
+	max-width: 778px;
+	margin: 0px auto;
 }
 
 .capabilities-container div hr {
 	width:100% !important;
+}
+
+.capabilities-container ul.what-we-do {
+    margin-top: 20px;
+}
+.capabilities-container ul.what-we-do li {
+    margin-bottom: 35px;
 }
 
 ul.capabilities-list {

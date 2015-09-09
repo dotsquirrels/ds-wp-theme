@@ -7,11 +7,11 @@ add_theme_support('post-thumbnails');
 function icon_li($atts, $content = null) {
     $a = shortcode_atts(array(
         'icon' => 'code',
-        'size' => '2'
+        'size' => '5'
     ), $atts);
 	return '<li><span class="li-icon"><i class="fa fa-'.$a['icon'].' fa-'.$a['size'].'x"></i></span><span class="li-text">'.$content.'</span></li>';
 }
-add_shortcode( 'li', 'icon_li' );
+add_shortcode('li', 'icon_li');
 
 function bio_card($atts, $content = null) {
     $default_image = get_bloginfo('stylesheet_directory').'/img/default-bio-photo.png';
@@ -35,7 +35,12 @@ function bio_card($atts, $content = null) {
 	</ul>
 	';
 }
-add_shortcode( 'bio', 'bio_card' );
+add_shortcode('bio', 'bio_card');
+
+function render_divider($atts, $content = null) {
+	return '<div class="rough-edge"></div>';
+}
+add_shortcode('divider', 'render_divider');
 
 /* CUSTOM IMAGE PROCESSING */
 
