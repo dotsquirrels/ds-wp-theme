@@ -8,10 +8,11 @@
 	<?php if (have_posts()) { while (have_posts()) {
 
 		the_post(); 
+		$thumbnail_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
 
 		?><div class="basic-content">
 			<div class="basic-content-hero">
-				<a href="<?php the_permalink(); ?>"><img class="basic-hero" src="<?php bloginfo('stylesheet_directory') ?>/img/VideoImg_778x482.jpg" alt="Hero Header" /></a>
+				<a href="<?php the_permalink(); ?>"><img class="basic-hero" src="<?php echo $thumbnail_image[0]; ?>" alt="<?php the_title(); ?>" /></a>
 			</div>
 			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<p class="basic-content-excerpt"><?php echo get_the_excerpt(); ?></p>
@@ -35,6 +36,7 @@
 
 	}} ?>
 
+	<!--
 	<ul class="blog-content-navigation">
 		<li class="older-posts"><a href="javascript:void(0);"><i class="fa fa-caret-left"></i>OLDER</a></li>
 		<li><a href="javascript:void(0);">1</a></li>
@@ -46,6 +48,7 @@
 		<li><a href="javascript:void(0);">13</a></li>
 		<li class="newer-posts"><a href="javascript:void(0);">NEWER<i class="fa fa-caret-right"></i></a></li>
 	</ul>
+	//-->
 	
 </div>
 

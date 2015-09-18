@@ -71,7 +71,7 @@ Template Name: Homepage
 	<h2>Who We Are</h2>
 	<div class="rough-edge"></div>
 	<div class="who_we_are content">
-		<?php echo apply_filters('the_content', types_render_field('hp-who-we-are', array('raw'=>'true'))); ?>	
+		<?php the_content(); ?>	
 		<div class="center"><a href="<?php echo site_url('/about'); ?>" class="button">Meet The Team</a></div>
 	</div>
 

@@ -125,8 +125,34 @@ a.button:hover {
 	border:1px solid #000000;
 }
 
-/* Form */
-form.contact-form {
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////		Contact Form															//////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.gfield_label {
+	display: none;
+}
+
+#gform_confirmation_message_1, .validation_error {
+	color: #00B254;
+	text-align: center;
+	padding: 30px;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.validation_error {
+	color: #840000;
+}
+.gfield_description.validation_message {
+	display: none;
+}
+li.gfield_error input {
+	border: 1px solid #840000 !important;
+	background-color: #F0E0E0 !important;
+}
+
+form#gform_1 {
 	width:90%;
 	max-width:455px;
 	height:auto;
@@ -457,7 +483,7 @@ body.home .content {
 }
 body.home .content p {
 	font-size:24px;
-	line-height:26px;
+	line-height:34px;
 	color:#545353;
 	width:90%;
 	max-width:616px;
@@ -646,7 +672,7 @@ ul.about-us-profile li.name, li.title, li.blurb {
 	width:45%;
 }
 li.name {
-	padding-top:30px;
+	padding-top:2px;
 	font-weight:900;
 	font-size:32px;
 }
@@ -657,8 +683,8 @@ li.title {
 }
 li.blurb {
 	padding-top:15px;
-	font-size:28px;
-	line-height:28px;
+	font-size:20px;
+	line-height:29px;
 	color:#595959;
 }
 
@@ -684,8 +710,14 @@ p.work-detail-leadin-copy {
 }
 div.work-detail-container p {
 	color: #222;
-	font-size: 20px;
+	font-size: 22px;
 	margin: 15px auto;
+	text-align: justify;
+}
+div.work-detail-container p img.alignright {
+	float: right;
+	margin-left: 30px;
+	margin-bottom: 15px;
 }
 div.work-detail-container iframe {
 	margin-top: 12px;
@@ -902,8 +934,21 @@ body .footer h2 {
 	color: #747473;
 	background: none;	
 }
-body form.footer-contact-form{
-	margin-top: 0px;
+body .footer form#gform_1 {
+	margin-top: 0px !important;
+}
+
+body .footer form#gform_1 #field_1_2,
+body .footer form#gform_1 #field_1_3 {
+	display: inline-block;
+	width: 48%;
+}
+body .footer form#gform_1 #field_1_2 input,
+body .footer form#gform_1 #field_1_3 input {
+	width: 100%;
+}
+body .footer form#gform_1 #field_1_2 {
+	margin-left: 9px;
 }
 
 div.footer {
@@ -956,7 +1001,7 @@ div.footer hr {
 	width:100%;
 	margin:0;
 }
-form.footer-contact-form {
+body .footer form#gform_1 {
 	display:table;
 	width:100%;
 	height:auto;
@@ -964,7 +1009,7 @@ form.footer-contact-form {
 	text-align:center;
 	max-width:778px;
 }
-form.footer-contact-form  input[type="email"], form.footer-contact-form   input[type="text"] {
+body .footer form#gform_1 input[type="email"], body .footer form#gform_1 input[type="text"] {
 	width:48%;
 	border:1px solid #e2e0e0;
 	font-size:18px;
@@ -974,7 +1019,7 @@ form.footer-contact-form  input[type="email"], form.footer-contact-form   input[
 	appearance: none; 
 	box-sizing:border-box;
 }
-form.footer-contact-form   textarea {
+body .footer form#gform_1 textarea {
 	border:1px solid #e2e0e0;
 	font-size:18px;
 	margin-bottom:10px;
@@ -984,7 +1029,7 @@ form.footer-contact-form   textarea {
 	appearance: none; 
 	box-sizing:border-box;
 }
-form.footer-contact-form   select {
+body .footer form#gform_1 select {
 	width:48%;
 	border:1px solid #e2e0e0;
 	font-size:18px;
@@ -1266,13 +1311,13 @@ form input[data-placeholder] {
 		font-size:14px;
 		padding:20px 0;
 	}
-	form.footer-contact-form input[type="email"], form.footer-contact-form input[type="text"], form.footer-contact-form select {
+	body .footer form#gform_1 input[type="email"], body .footer form#gform_1 input[type="text"], body .footer form#gform_1 select {
 		width:92% !important;
 		margin-right:0 !important;
 		margin-left:0 !important;
 		max-width:92% !important;;
 	}
-	form.footer-contact-form textarea {
+	body .footer form#gform_1 textarea {
 		width:92%;
 	}
 	.container {
@@ -1446,7 +1491,7 @@ form input[data-placeholder] {
 	input[type="email"], input[type="text"], textarea, select {
 		font-size:18px;
 	}
-	form.contact-form {
+	form#gform_1 {
 		margin:35px auto 60px;
 	}
 

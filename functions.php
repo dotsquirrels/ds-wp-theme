@@ -109,7 +109,7 @@ function imagecreatefromfile($filename) {
 			return imagecreatefromgif($filename);
 			break;
 		default:
-			throw new InvalidArgumentException('File "'.$filename.'" is not valid jpg, png or gif image.');
+			//throw new InvalidArgumentException('File "'.$filename.'" is not valid jpg, png or gif image.');
 			break;
 	}
 }
@@ -119,5 +119,7 @@ function get_image_id_by_url($url) {
 	$url = preg_replace('/-\d+x\d+(?=\.(jpg|jpeg|png|gif)$)/i', '', $url);
 	return $wpdb->get_var("SELECT ID FROM {$wpdb->posts} WHERE BINARY guid='$url'");
 }
+
+add_filter('gform_confirmation_anchor', '__return_true');
 
 ?>

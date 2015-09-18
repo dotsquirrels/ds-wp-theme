@@ -2,12 +2,18 @@
 
 			<h2>Contact Us</h2>
 			<div class="rough-edge"></div>
-			<form class="contact-form" action="action.php" method="POST">
+
+			<?php gravity_form(1, false, false, false, '', false); ?>
+			
+			<!--
+			<form class="contact-form" method="POST">
 				<input type="text" name="name" placeholder="Name" tabindex="2" size="40" maxlength="100" />
 				<input type="text" name="email" placeholder="Email Address" tabindex="3" size="40" maxlength="100">
 				<textarea placeholder="Message..." id=""></textarea>
 				<input class="" type="submit" value="Send">
 			</form>
+			//-->
+
 			<div class="contact-details"><a href="tel:+13105662800">310 566 2800</a></div>
 			<div class="contact-details"><a href="mailto:help@dotsquirrels.com">help@dotsquirrels.com</a></div>
 			<hr>
@@ -31,12 +37,17 @@
 				</div>
 				<hr>
 				<h2>Contact Us</h2>
+	
+				<?php gravity_form(1, false, false, false, '', false); ?>
+
+				<!--
 				<form class="footer-contact-form" action="action.php" method="POST">
 					<input type="text" name="name" placeholder="Name" tabindex="2" size="40" maxlength="100" />
 					<input type="text" name="email" placeholder="Email Address" tabindex="3" size="40" maxlength="100" style="margin-left: 8px;" />
 					<textarea placeholder="Message..." id="" tabindex="5"></textarea>
 					<input class="" type="submit" value="Send" tabindex="6" />
 				</form>
+				//-->
 	
 			</div>
 
