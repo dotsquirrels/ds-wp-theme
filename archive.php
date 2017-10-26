@@ -1,55 +1,72 @@
+<?php
+/*
+Template Name: Tag Archive
+*/
+?>
 <?php get_header(); ?>
 
-<h2>Tips & Rants</h2>
-<div class="rough-edge"></div>
+	<!-- Recent Work -->
 
-<div class="blog-container">
+	<h2>Work Examples:<br/>Amazon Web Services</h2>
+	<div class="recent-work content">
+		<ul class="work-examples">
+			<?php
+			
+			$args = array(
+				'post_type' => 'post',
+				'posts_per_page' => 6,
+				'post_status' => 'publish',
+				'meta_query' => array(array('key' => 'wpcf-post_featured', 'value' => '1'))
+			);
+			$recent_work = new WP_Query($args);			
 
-	<?php if (have_posts()) { while (have_posts()) {
+			if ($recent_work->have_posts()) {
+				$post_counter == 0;
+				while ($recent_work->have_posts()) {
+					$post_counter++;
+					$recent_work->the_post();
+					$thumbnail_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'square-clean-edge');
+					switch($post_counter) {
+						case 1:
+						case 4:
+							$thumb_class = 'left';
+							break;
+						case 3:
+						case 6:
+							$thumb_class = 'right';
+							break;
+						default:
+							$thumb_class = 'center';
+					}
+					?><li class="align-<?php echo $thumb_class; ?>">
+						<a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_image[0]; ?>" alt="<?php the_title(); ?>" width="243" height="243" /></a>
+						<p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+					</li><?php
+				}
 
-		the_post(); 
-		$thumbnail_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
-
-		?><div class="basic-content">
-			<div class="basic-content-hero">
-				<a href="<?php the_permalink(); ?>"><img class="basic-hero" src="<?php echo $thumbnail_image[0]; ?>" alt="<?php the_title(); ?>" /></a>
-			</div>
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-			<p class="basic-content-excerpt"><?php echo get_the_excerpt(); ?></p>
-			<p class="basic-content-date"><?php the_date('F j, Y'); ?></p> 
-		</div>
-
-		<?php
-	
-		$post_tags = get_the_tags();
-		if ($post_tags) {
-			echo '<ul class="work-detail-tags">';
-			foreach($post_tags as $tag) {
-				echo '<li><p><a href="'.get_tag_link($tag->term_id).'">'.$tag->name.'</a><i class="fa fa-tag"></i></p></li>';
 			}
-			echo '</ul>';
-		}		
+
+			wp_reset_postdata();			
+			
+			?>
+		</ul>
+	</div>
 	
-		?>
+	<h2>Other Capabilities</h2>
+	<div class="what_we_do content">
 
-		<hr><?php
+		<div class="blurb"><p>I want to say that you can click on a tag to see related work examples,<br/>and I'm sure there's a chill way to say that.</p></div>
 
-	}} ?>
+		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
+		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
+		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
+		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
+		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
+		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
+		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
+		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
+		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
 
-	<!--
-	<ul class="blog-content-navigation">
-		<li class="older-posts"><a href="javascript:void(0);"><i class="fa fa-caret-left"></i>OLDER</a></li>
-		<li><a href="javascript:void(0);">1</a></li>
-		<li><a href="javascript:void(0);">2</a></li>
-		<li><a href="javascript:void(0);">3</a></li>
-		<li><a href="javascript:void(0);">4</a></li>
-		<li><a href="javascript:void(0);">&hellip;</a></li>
-		<li><a href="javascript:void(0);">12</a></li>
-		<li><a href="javascript:void(0);">13</a></li>
-		<li class="newer-posts"><a href="javascript:void(0);">NEWER<i class="fa fa-caret-right"></i></a></li>
-	</ul>
-	//-->
-	
-</div>
+	</div>
 
 <?php get_footer(); ?>

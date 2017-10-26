@@ -45,6 +45,7 @@ add_shortcode('divider', 'render_divider');
 /* CUSTOM IMAGE PROCESSING */
 
 add_image_size('square-rough-edge', 389, 389, true);
+add_image_size('square-clean-edge', 389, 389, true);
 add_filter('wp_generate_attachment_metadata','mask_rough_square');
 
 add_filter('image_size_names_choose', 'add_custom_sizes');
@@ -70,7 +71,7 @@ function do_masked_square_filter($file) {
 	$file = $filename_info['filename'].'-masked.png';
 	$dest = trailingslashit($dir['path']).$file;
 	imagepng($image, $dest);
-	unlink($original);
+	//unlink($original);
 	return $file;
 }
 
