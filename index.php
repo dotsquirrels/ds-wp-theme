@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h2><?php the_title(); ?></h2>
+<h2><?php the_post(); the_title(); ?></h2>
 <div class="rough-edge"></div>
 
 <div class="work-detail-container">
@@ -19,7 +19,7 @@
 	if ($post_tags) {
 		echo '<ul class="work-detail-tags">';
 		foreach($post_tags as $tag) {
-			echo '<li><p><a href="'.get_tag_link($tag->term_id).'">'.$tag->name.'</a><i class="fa fa-tag"></i></p></li>';
+			echo '<li><p><a href="'.get_tag_link($tag->term_id).'">'.$tag->name.'</a><i class="fa '.get_field('icon_class', 'post_tag_'.$tag->term_id).'"></i></p></li>';
 		}
 		echo '</ul>';
 	}		

@@ -3,7 +3,7 @@
 Template Name: About
 */
 ?>
-<?php get_header(); ?>
+<?php get_header(); the_post(); ?>
 
 <h2>About Us</h2>
 
@@ -12,9 +12,9 @@ Template Name: About
 <div class="about-container">
 
 	<div class="atomic-header">
-		<h3><?php echo types_render_field('atomic_headline'); ?></h3>
+		<h3><?php the_field('atomic_header'); ?></h3>
 		<div class="body">
-			<?php echo types_render_field('atomic_content'); ?>
+			<?php the_field('atomic_content'); ?>
 		</div>
 	</div>
 

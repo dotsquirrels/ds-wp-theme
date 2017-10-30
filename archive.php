@@ -7,16 +7,20 @@ Template Name: Tag Archive
 
 	<!-- Recent Work -->
 
-	<h2>Work Examples:<br/>Amazon Web Services</h2>
+	<h2>Work Examples:<br/><?php single_tag_title(); ?></h2>
 	<div class="recent-work content">
 		<ul class="work-examples">
 			<?php
+
+			$tag = get_queried_object();
+			$blog_cat = get_category_by_slug('blog');
 			
 			$args = array(
 				'post_type' => 'post',
 				'posts_per_page' => 6,
 				'post_status' => 'publish',
-				'meta_query' => array(array('key' => 'wpcf-post_featured', 'value' => '1'))
+				'category__not_in' => array($blog_cat->term_id),
+				'tag' => $tag->slug,
 			);
 			$recent_work = new WP_Query($args);			
 
@@ -52,21 +56,9 @@ Template Name: Tag Archive
 		</ul>
 	</div>
 	
-	<h2>Other Capabilities</h2>
+	<h2>Our Capabilities</h2>
 	<div class="what_we_do content">
-
-		<div class="blurb"><p>I want to say that you can click on a tag to see related work examples,<br/>and I'm sure there's a chill way to say that.</p></div>
-
-		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
-		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
-		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
-		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
-		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
-		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
-		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
-		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
-		<a class="tag-button" href="./tag/amazon-web-services/"><i class="fa fa-code fa-2x"></i> <span>Tag Text</span></a>
-
+		<?php include_once('fragment-tags.php'); ?>
 	</div>
 
 <?php get_footer(); ?>

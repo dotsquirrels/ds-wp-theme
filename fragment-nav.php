@@ -1,9 +1,9 @@
 <div class="mobilenav">
 	<ul>
 		<li><a href="<?php echo site_url('/'); ?>">Home</a></li>
-		<li><a href="<?php echo site_url('/capabilities'); ?>">Capabilities</a></li>
-		<li><a href="<?php echo site_url('/about'); ?>">About Us</a></li>
-		<li><a href="<?php echo site_url('/blog'); ?>">Tips & Rants</a></li>
+		<li><a href="<?php echo site_url('/#capabilities'); ?>">Capabilities</a></li>
+		<li><a href="<?php echo site_url('/#contact'); ?>">Contact Us</a></li>
+		<li><a href="<?php echo site_url('/about/'); ?>">About Us</a></li>
 		<li class="social-icons">
 			<ul>
 				<li class="linkdin"><a href="http://www.linkedin.com/company/dot-squirrels-llc" target="_blank"><img src="<?php bloginfo('stylesheet_directory') ?>/img/trans.gif" height="24" width="24" border="0"></a></li>
