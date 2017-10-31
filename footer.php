@@ -1,4 +1,5 @@
 
+			<a id="contact" />
 			<h2>Contact Us</h2>
 			<div class="rough-edge"></div>
 	

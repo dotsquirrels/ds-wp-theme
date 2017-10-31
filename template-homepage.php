@@ -14,6 +14,7 @@ Template Name: Homepage
 		</div>
 	</div>
 	
+	<a id="capabilities" />
 	<h2>Capabilities</h2>
 	<div class="what_we_do content">
 		<?php include_once('fragment-tags.php'); ?>
